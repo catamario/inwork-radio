@@ -10,6 +10,12 @@ html, body, header {
 body
 {
   overflow-x: hidden;
+  background-color: #1b1b1b;
+}
+
+.content
+{
+  width: 100vw;
 }
 
 ::-webkit-scrollbar {
@@ -119,7 +125,7 @@ header
     text-align: center;
     margin:0 5;
     font-weight:900;
-    font-size: 32;
+    font-size: 1.6667vw;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
     text-shadow: 4px 3px #575353
@@ -144,8 +150,8 @@ nav
 
 nav a
 {
-    margin: 0 46px;
-    font-size: 28 ;
+    margin: 0 2.3958vw;
+    font-size: 1.4583vw;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     list-style: none;
@@ -187,8 +193,8 @@ nav a:hover
 .asculta
 {
   background-color: black;
-  height: 50px;
-  width: 200px;
+  height: 2.6042vw;
+  width: 10.4167vw;
 
   display: flex;
   align-items: center;
@@ -199,7 +205,7 @@ nav a:hover
 .asculta h2
 {
   color: rgba(13, 255, 133, 1);
-  font-size: 20;
+  font-size: 1.0417vw;
   text-align: center;
   font-family:serif;
   transition: 0.2s ease-in-out; 
@@ -242,7 +248,7 @@ nav a:hover
 /* <!-- <<<<<<<LANDING TEXT<<<<<<< --> */
 .landingtext
 {
-  width: 750px;
+  width: 39.0625vw;
   height: fit-content;
   position: relative;
   overflow:auto;
@@ -255,22 +261,22 @@ nav a:hover
 .landingtext p
 {
   color: white;
-  font-size:60;
+  font-size:3.1250vw;
   font-family:cursive;
   word-spacing: 0;
-  letter-spacing: -5;
+  letter-spacing: -0.2604vw;
   text-shadow: 4px 4px 5px rgb(156, 156, 156);
 }
 .landingtext p span
 {
   float: right;
-  font-size: 64;
+  font-size: 3.3333vw;
   font-family:fantasy;
   letter-spacing: 0;
 }
 .landingtext br
 {
-  line-height:22px;
+  line-height:1.1458vw;
 }
 /* <!-- <<<<<<<LANDING TEXT<<<<<<< --> */
 
@@ -344,9 +350,9 @@ section
   background-color: transparent;
   backdrop-filter: blur(50px);
 
-  width: 500px; height: 600px;
+  width: 26.0417vw; height: 34.2500vw;
   position: absolute;
-  right: 50px; top:150px;
+  right: 50px; top:50%; transform: translateY(-50%);
 
   border: 2px solid rgb(0, 227, 113);
   box-shadow: 2px 2px 12px white;
@@ -362,7 +368,7 @@ section
 .section1 img
 {
   position: absolute;
-  top: 110px;
+  top: 6vw;
   width: 100%;
   animation: nuvreau 10s linear infinite;
 }
@@ -376,7 +382,7 @@ section
 {
   content: "Urmăriți pagina noastră de Facebook?";
 
-  font-size: 42;
+  font-size: 2.1875vw;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: white;
   text-shadow: 2px 2px 2px black;
@@ -393,7 +399,7 @@ section
 {
   content: "Dragă ascultător de radio! Dacă dorești ca pagina să funcționeze stabil și pe termen lung și în continuare - și dacă vrei să ne sprijini -, atunci te rugăm să oprești programul blocare a reclamelor pe pagină! Dacă ai nevoie de ajutor, dă click aici!";
   
-  font-size: 36;
+  font-size: 1.8750vw;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: white;
   text-shadow: 2px 2px 2px black;
@@ -401,6 +407,7 @@ section
 
   position: absolute;
   bottom: 0;
+  top:11.7188vw;
   margin: 10 10 10 10;
   background-color: transparent;
   height: fit-content; width: calc(100% - 20px);
@@ -594,6 +601,9 @@ section
   position: relative;
   top:15%;
 }
+.section3 .musicplayer .asculta {height: 50px;
+  width: 200px;}
+  .section3 .musicplayer .asculta h2{font-size: 20px;}
 .section3 #badrun
 {
   position: absolute;
@@ -669,8 +679,8 @@ font-weight: 700;
   right: 0;
   bottom: 10%;
   background-color: transparent;
-  width: 75px;
-  height: 75px;
+  width: 3.9063vw;
+  height: 3.9063vw;
 
   box-shadow: 4px 4px 12px rgba(255, 255, 255, 0.25);
    border-radius: 15px;
@@ -688,7 +698,7 @@ font-weight: 700;
 {
   background-color: transparent;
   position: relative;
-  right:10%;
+  right:1vw;
   width: 740px;
   height: 550px;
 
@@ -785,6 +795,8 @@ text-shadow: 12px 12px 12px black;
 
 }
 
+
+
 @media(max-width:425px)
 {
   .btn
@@ -811,10 +823,10 @@ text-shadow: 12px 12px 12px black;
     opacity: 1;
     position: fixed;
     right: -100%;
-    top:100px;
+    top:75px;
     background-color: rgba(0,0,0,0.25);
-    height: fit-content;
-    width: 50vw;
+    height: 100vh;
+    width: 35vw;
     display: block;
     transition: 0.5s;
   }
@@ -829,25 +841,127 @@ text-shadow: 12px 12px 12px black;
   .pagesbox nav
   {
     height: fit-content;
-    width: 50%;
+    width: 75%;
+    transform: translateX(-5%);
     margin: auto;
     display: block;
-    justify-content: space-around;
+    justify-content: space-between;
+
   }
 
   .pagesbox nav a
   {
     display: block;
-    margin: 0 auto 16px;
+    margin: 0 auto 48px;
     text-align: center;
     padding: 12px 16px;
     line-height: 80px;
     background-color: rgba(92, 92, 92, 0.2);
     box-shadow: inset 0 0 10px 10px rgba(0,0,0,0.5);
+
+    font-size: 5.8824vw;
   }
 
   .logobox h2{font-size: 28;}
 
+  .asculta  
+  {
+    width: 100%;
+  }
+  .asculta a h2 {display: none;}
+  .asculta {background-color: transparent; border: 0; padding-top: 20px;}
+
+
+
+
+  .section1 .landingtext
+  {
+
+    left:50%;
+    width: 90%;
+    top:7%;
+    transform: translateX(-50%);
+  }
+  .section1 .landingtext p{font-size: 28px;}
+  .section1 .landingtext span{font-size: 30px;}
+  .landingtext br
+  {
+  line-height:5.8824vw;
+  }
+
+  .section1 .infotext
+  {
+    left:50%; transform: translateX(-50%);
+
+    width: 58.8235vw; height: 70.5882vw;
+  }
+  .section1 .infotext::before
+  {
+    font-size: 3.2941vw;
+  }
+  .section1 .infotext::after
+  {
+    font-size: 4.2353vw;
+    top:25%;
+  }
+
+  .section2 .dreapta{top:-5px;}
+  .section2 h1
+  {
+    font-size: 7.0588vw !important;
+  }
+  .section2 p
+  {
+    font-size: 3.7647vw !important;
+  }
+  .section2 a img{height: 100%; width: 37.6471vw;}
+
+
+
+  .section3 #badrun
+  {  position: absolute;
+    height: 250px;
+    right:-200px !important;
+    pointer-events: none;
+  }
+
+
+  .section4 .topcontact h1
+  {
+    font-size: 42px !important;
+    left: 50%;
+    transform: translateX(-10%);
+  }
+  .section4 .containerjos
+  {
+    display: block;
+  }
+  .section4 form
+  {
+    height: fit-content;
+    width: 90%;
+    display: block;
+  }
+  .section4 form button
+  {
+    height: 75px;
+    width: 75px;
+  }
+  
+  .section4 .contactoptions
+  {
+    width: 90%;
+    left:5px;
+  }
+
+  .jsfooter .butonfooter
+  {
+    right: 0;
+  }
+  .jsfooter .butonfooter .asculta h2
+  {
+    font-size: 3.25vw !important; 
+  }
 
 }
 
